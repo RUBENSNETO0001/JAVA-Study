@@ -50,7 +50,7 @@ public class segunda_aula {
         //foreach
         String[] frutas = {"mamao", "banana", "maça"};
 
-        for(String i : frutas){
+        for (String i : frutas) {
             System.out.println(i);
             System.out.println(frutas);
         }
@@ -65,20 +65,50 @@ public class segunda_aula {
 
         continue;
          */
-
         // array list
-
         //aqui vamos declarar um simples array em java
         // String[] nomedaVariavel = {};
-
         String[] nomeLindos = {"nome1", "nome2", "nome3"};
         // e com o array da de selecionar só ele 
         // nao esqueça que a contagem é 0, 1, 2, ...
         System.out.println(nomeLindos[2]);
 
-        for (String nome: nomeLindos) {
-            System.out.println("lista ["+nomeLindos.length + "] " + nome);
+        //aluno olha isso aqui. isso agora e um for each, fiz uma String nome e comparei com o nomelindos
+        // ele vai pecorrer a lista toda
+        for (String nome : nomeLindos) {
+            // imprimir o nomelindos com a tag length que so faz a lista cada vez virar numero e imprimir
+            // o nome de cada casa na tela
+            System.out.println("lista [" + nomeLindos.length + "] " + nome);
         }
+
+        //agora olha que legal meu rei
+        // vamos agora criar uma lista com 4 espaços
+        String[] frutasArray = new String[4];
+
+        frutasArray[0] = "chuchu";
+        frutasArray[1] = "pinga";
+        frutasArray[2] = "leite";
+        frutasArray[3] = "uva";
+
+        //se você já conhece os valores, não precisa escrever new. Ambas as opções criam o mesmo array: 
+        // vamos mecher com uma coisa mais dificil: matriz
+        int[][] matriz = {{1, 2, 3}, {4, 5, 6}};
+
+        System.out.println(matriz[1][2]);
+        //agora so para mostra como e colocar tudo
+
+        for (int i = 0; i < matriz.length; i++) {
+            for (int j = 0; j < matriz[i].length; j++) {
+                System.out.println(matriz[i][j]);
+            }
+        }
+        System.out.println(" ");
         
+        // agora com for each
+        for (int i[] : matriz) {
+            for (int j : i) {
+                System.out.println(j);
+            }
+        }
     }
 }
