@@ -103,11 +103,144 @@ public class segunda_aula {
             }
         }
         System.out.println(" ");
-        
+
         // agora com for each
         for (int i[] : matriz) {
             for (int j : i) {
                 System.out.println(j);
+            }
+        }
+        //exercicio
+
+        /*
+        Exercício 1 — Condicional + Operador ternário:
+        Crie uma variável int nota = 7.
+
+        Use if  / else para imprimir: "Aprovado" se a nota for maior ou igual a {6}"Reprovado" caso contrário
+        Depois, faça a mesma lógica usando o operador ternário e imprima o resultado.
+
+        Objetivo: fixar if  /else e operador ternário.
+         */
+        //variavel que vou usar
+        int nota = 8;
+
+        // forma 1
+        if (nota >= 7) {
+            System.out.println("Aprovado");
+        } else {
+            System.out.println("Reprovado");
+        }
+
+        // forma 2
+        String resultadoExecicio = (nota >= 7) ? "Aprovado" : "Reprovado";
+        System.out.println("Resultado:" + resultadoExecicio);
+
+        /* 
+        Exercício 2 — while + do while:
+        Crie uma variável int contador = 1.
+
+        Usando while, imprima os números de 1 até 5. Depois, usando do while, imprima os números de 5 até 1.
+
+        Objetivo: entender a diferença entre while e do while.
+         */
+        int contador = 1;
+
+        while (contador <= 5) {
+            System.out.println("Contador 1: " + contador++);
+        }
+
+        do {
+            System.out.println("Contador 2: " + contador--);
+        } while (contador >= 0);
+
+        /* 
+        Exercício 3 — for + switch:
+        Crie um for que vá de 1 até 7. Dentro do loop, use switch para imprimir:
+
+        1 → "Domingo"
+
+        2 → "Segunda"
+
+        3 → "Terça"
+
+        4 → "Quarta"
+
+        5 → "Quinta"
+
+        6 → "Sexta"
+
+        7 → "Sábado"
+
+        Objetivo: treinar for com switch.
+         */
+        int diaSemana = 9;
+        switch (diaSemana) {
+            case 1:
+                System.out.println("Segunda");
+                break;
+            case 2:
+                System.out.println("Terça");
+                break;
+            case 3:
+                System.out.println("Quarta");
+                break;
+            case 4:
+                System.out.println("Quinta");
+                break;
+            case 5:
+                System.out.println("Sexta");
+                break;
+            case 6:
+                System.out.println("Sabado");
+                break;
+            case 7:
+                System.out.println("Domingo");
+                break;
+            default:
+                System.err.println("Sem o numero aqui");
+                break;
+        }
+
+        /* 
+        Exercício 4 — Array + foreach:
+
+        Crie um array de String com 5 nomes de frutas. Use foreach para imprimir: Fruta X
+
+        No final, imprima: Total de frutas: X usando o length.
+
+        Objetivo: fixar array simples + foreach.
+
+         */
+        String[] frutasExecicio = {"mamao", "limao", "laranja", "banana", "uva"};
+        int contadorFrutas = 1;
+        for (String fruta: frutasExecicio) {
+            System.out.println("Fruta [" + contadorFrutas++ + "]: "+ fruta);
+        }
+
+        /* 
+        Exercício 5 — Matriz + loops
+
+        Crie uma matriz int 3x3 com números de 1 a 9.
+
+        Exemplo:
+
+        1 2 3
+        4 5 6
+        7 8 9
+
+        Imprima todos os valores usando for normal.
+
+        Depois, imprima novamente usando foreach.
+
+        Por fim, imprima a soma de todos os números da matriz.
+
+        Objetivo: dominar matriz + loops aninhados.
+         */
+        int[][] matrizExercicio = {{1,2,3},{4,5,6},{7,8,9}};
+
+        for(int i[] : matrizExercicio){
+            for(int j: i){
+                System.out.print(j);
             }
         }
     }
