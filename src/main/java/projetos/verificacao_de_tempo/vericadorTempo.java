@@ -1,4 +1,4 @@
-package projetos.verificação_de_tempo;
+package projetos.verificacao_de_tempo;
 
 import java.io.IOException;
 import java.net.URI;

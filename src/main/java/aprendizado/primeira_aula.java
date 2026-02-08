@@ -35,6 +35,15 @@ public class primeira_aula {
         final int valor = 0;
 
         System.out.println(valor);
+        /*
+        A diferença na escrita ocorre porque, no Java, as palavras iniciadas com letra minúscula (como int, double, char) são tipos primitivos, enquanto as que começam com letra maiúscula (como String) são classes. 
+        Aqui estão os motivos principais:
+
+        String é um Objeto: Ao contrário de um int, que guarda apenas um número simples, uma String é um objeto da classe java.lang.String. Por ser uma classe, ela segue a convenção de nomenclatura do Java, onde todo nome de classe deve começar com letra maiúscula.
+        Possui Métodos: Como String é uma classe, ela vem com "ferramentas" embutidas (métodos) para manipular o texto, como .toUpperCase(), .length() ou .substring(). Tipos primitivos como int não possuem métodos.
+        Complexidade: Um tipo primitivo tem um tamanho fixo na memória (ex: 32 bits para int). Já uma String pode ter qualquer tamanho, por isso ela é tratada como um tipo de referência (objeto) mais complexo. 
+        Em resumo, a diferença na capitalização reflete a distinção fundamental entre tipos primitivos e classes/objetos no Java.
+         */
 
         //execicio
         //1.junte primeiro nome ou segundo nome, exemplo: Rubens Neto:
@@ -59,9 +68,8 @@ public class primeira_aula {
         int numeroseg2 = 4;
         int numeroPeS = numeropri1 + numeroseg2;
         System.out.println(numeroPeS);
-        
-        // 3. faça um imc usuando oque vc aprendeu
 
+        // 3. faça um imc usuando oque vc aprendeu
         float pesoExercicio = 80.5f;
         float alturaExercicio = 1.70f;
         float imc = 0;
